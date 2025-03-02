@@ -1,0 +1,180 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel Warna */
+:root {
+    --primary-color: #4A90E2; /* Warna utama */
+    --secondary-color: #FFFFFF; /* Warna sekunder */
+    --accent-color: #D0021B; /* Warna aksen */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Warna bayangan */
+}
+
+/* Gaya untuk Body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Ruang antara logo dan menu */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 20px; /* Padding untuk header */
+    background: var(--primary-color); /* Warna latar belakang header */
+    color: var(--secondary-color); /* Warna teks di header */
+}
+
+header .logo {
+    font-size: 2rem; /* Ukuran font logo */
+}
+
+header nav ul {
+    display: flex; /* Flexbox untuk menu */
+    list-style: none; /* Menghilangkan bullet points */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Margin antara item menu */
+}
+
+header nav ul li a {
+    color: var(--secondary-color); /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
+
+/* Section Sertifikat */
+#sertifikat {
+    padding: 50px; /* Padding untuk section */
+    margin: 20px auto; /* Margin untuk section */
+    background: var(--secondary-color); /* Latar belakang section */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 20px var(--shadow-color); /* Bayangan untuk section */
+    max-width: 1200px; /* Lebar maksimum section */
+    flex: 1;
+}
+
+#sertifikat h2 {
+    margin-bottom: 20px; /* Margin bawah untuk judul */
+    color: var(--primary-color); /* Warna judul */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.sertifikat-container {
+    display: flex; /* Flexbox untuk kontainer sertifikat */
+    flex-wrap: wrap; /* Membungkus item sertifikat */
+    justify-content: center; /* Menyelaraskan item di tengah */
+}
+
+.sertifikat-item {
+    margin: 10px; /* Margin untuk setiap item sertifikat */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    flex: 1 1 30%; /* Mengatur lebar item sertifikat */
+    max-width: 30%; /* Lebar maksimum item sertifikat */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.sertifikat-item:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.sertifikat-item img {
+    width: 100%; /* Lebar gambar 100% dari kontainer */
+    height: auto; /* Tinggi otomatis */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 10px var(--shadow-color); /* Bayangan untuk gambar */
+    cursor: pointer; /* Menunjukkan bahwa gambar dapat diklik */
+}
+
+.sertifikat-item p {
+    margin-top: 10px; /* Margin atas untuk deskripsi */
+    color: #333; /* Warna teks deskripsi */
+}
+
+/* Modal Popup */
+.modal {
+    display: none; /* Sembunyikan modal secara default */
+    position: fixed; /* Tetap di tempat saat di-scroll */
+    z-index: 1; /* Di atas konten lainnya */
+    padding-top: 100px; /* Jarak dari atas halaman */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    overflow: auto; /* Aktifkan scroll jika diperlukan */
+    background-color: rgb(0,0,0); /* Warna latar belakang */
+    background-color: rgba(0,0,0,0.9); /* Warna latar belakang dengan transparansi */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color); /* Latar belakang footer */
+    color: var(--secondary-color); /* Warna teks di footer */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    padding: 20px 0; /* Padding untuk footer */
+    margin-top: auto; /* Membuat footer tetap di bawah */
+}
+
+.footer-content {
+    max-width: 1200px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Menyelaraskan konten ke tengah */
+}
+
+.contact-info, .social-media {
+    margin: 10px 0; /* Margin untuk jarak antar elemen */
+}
+
+.social-media a {
+    color: var(--secondary-color); /* Warna tautan di footer */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.social-media a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}

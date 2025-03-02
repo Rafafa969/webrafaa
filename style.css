@@ -1,0 +1,212 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel Warna */
+:root {
+    --primary-color: #4A90E2; /* Warna utama */
+    --secondary-color: #FFFFFF; /* Warna sekunder */
+    --accent-color: #D0021B; /* Warna aksen */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Warna bayangan */
+}
+
+/* Gaya untuk Body */
+body {
+    background-color: #f4f4f4; /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Font untuk seluruh halaman */
+}
+
+/* Header */
+header {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Ruang antara logo dan menu */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 20px; /* Padding untuk header */
+    background: var(--primary-color); /* Warna latar belakang header */
+    color: var(--secondary-color); /* Warna teks di header */
+}
+
+header .logo {
+    font-size: 2rem; /* Ukuran font logo */
+}
+
+header nav ul {
+    display: flex; /* Flexbox untuk menu */
+    list-style: none; /* Menghilangkan bullet points */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Margin antara item menu */
+}
+
+header nav ul li a {
+    color: var(--secondary-color); /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
+
+/* Beranda */
+.beranda {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    justify-content: space-between; /* Menyusun konten ke kiri dan kanan */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 200px 90px; /* Padding untuk beranda */
+    margin: 0; /* Menghilangkan margin */
+    min-height: 500px; /* Tinggi minimum */
+    position: relative; /* Untuk penataan elemen pseudo */
+    overflow: hidden; /* Menghindari elemen keluar dari kontainer */
+}
+
+.background-video {
+    position: absolute; /* Memposisikan video secara absolut */
+    top: 0; /* Menempatkan video di bagian atas */
+    left: 0; /* Menempatkan video di bagian kiri */
+    width: 100%; /* Lebar video 100% dari kontainer */
+    height: 100%; /* Tinggi video 100% dari kontainer */
+    object-fit: cover; /* Menjaga rasio aspek dan menutupi area */
+    z-index: -1; /* Menempatkan video di belakang konten */
+}
+
+.beranda-content {
+    text-align: left; /* Memindahkan teks ke kiri */
+    color: #f4f4f4; /* Warna teks di beranda */
+    position: relative; /* Memastikan konten berada di atas video */
+    z-index: 1; /* Menempatkan konten di atas video */
+}
+
+.beranda h1 {
+    font-size: 3rem; /* Ukuran font yang lebih besar */
+}
+
+.beranda p {
+    font-size: 1.2rem; /* Ukuran font untuk deskripsi */
+    margin: 20px 0; /* Margin untuk jarak */
+}
+
+.btn {
+    display: inline-block; /* Menampilkan sebagai blok */
+    padding: 10px 20px; /* Padding untuk tombol */
+    background-color: var(--accent-color); /* Warna latar belakang tombol */
+    color: var(--secondary-color); /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut membulat */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi untuk skala dan warna latar belakang */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Memperbesar tombol sedikit saat dihover */
+    background-color: #A50000; /* Mengubah warna latar belakang saat dihover */
+}
+
+/* Gaya untuk Gambar Profil */
+.image-container {
+    position: relative; /* Konteks posisi untuk overlay */
+    display: inline-block; /* Inline block untuk gambar */
+    width: 300px; /* Atur lebar sesuai kebutuhan */
+    height: 300px; /* Atur tinggi sesuai kebutuhan */
+}
+
+.profile-pic {
+    width: 100%; /* Mengatur lebar gambar sesuai kontainer */
+    height: 100%; /* Mengatur tinggi gambar sesuai kontainer */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+}
+
+.overlay {
+    position: absolute; /* Memposisikan overlay secara absolut */
+    top: 0; /* Menempatkan overlay di bagian atas */
+    left: 0; /* Menempatkan overlay di bagian kiri */
+    width: 100%; /* Lebar overlay 100% dari kontainer */
+    height: 100%; /* Tinggi overlay 100% dari kontainer */
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi 50% */
+    color: white; /* Warna teks overlay */
+    display: flex; /* Menggunakan flexbox untuk penataan teks */
+    justify-content: center; /* Menyelaraskan teks di tengah */
+    align-items: center; /* Menyelaraskan teks secara vertikal */
+    font-size: 1.5rem; /* Ukuran font untuk teks overlay */
+    border-radius: 0%; /* Membuat overlay bulat */
+}
+
+/* Section */
+section {
+    padding: 50px; /* Padding untuk section */
+    margin: 20px; /* Margin untuk section */
+    background: var(--secondary-color); /* Latar belakang section */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 20px var(--shadow-color); /* Bayangan untuk section */
+}
+
+/* Sertifikat */
+.sertifikat-container {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    flex-wrap: wrap; /* Membungkus item sertifikat jika tidak muat dalam satu baris */
+    justify-content: space-around; /* Menyusun item secara merata */
+}
+
+.sertifikat-item {
+    margin: 10px; /* Margin antar item sertifikat */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    flex: 1 1 200px; /* Mengatur item agar fleksibel dengan lebar minimum 200px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.sertifikat-item:hover {
+    transform: scale(1.05); /* Memperbesar item sedikit saat dihover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat dihover */
+}
+
+.sertifikat-item img {
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar kontainer */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 8px; /* Sudut membulat pada gambar */
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color); /* Latar belakang footer */
+    color: var(--secondary-color); /* Warna teks di footer */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    padding: 20px 0; /* Padding untuk footer */
+}
+
+.footer-content {
+    max-width: 1200px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Menyelaraskan konten ke tengah */
+}
+
+.contact-info, .social-media {
+    margin: 10px 0; /* Margin untuk jarak antar elemen */
+}
+
+.social-media a {
+    color: var(--secondary-color); /* Warna tautan di footer */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.social-media a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start; /* Align menu items to the left */
+    }
+
+    header nav ul li {
+        margin: 5px 0; /* Margin between menu items */
+    }
+}

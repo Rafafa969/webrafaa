@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Portofolio Saya</title>
+    <link rel="stylesheet" href="kontak.css"> <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS umum jika diperlukan -->
+</head>
+<body>
+    <header>
+        <div class="logo">M.Rafa Alfareza</div>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Saya</a></li>
+                <li><a href="sertifikat.html">Sertifikat</a></li> 
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="Tefa.html">TEFA</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="kontak">
+        <h2>Hubungi Saya</h2>
+        <p>Jika Anda memiliki pertanyaan atau ingin berkolaborasi, silakan hubungi saya melalui formulir di bawah ini:</p>
+        
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="nama" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="pesan" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <div class="social-media">
+        
+            <a href="https://www.instagram.com/rafalfrzl/" target="_blank">
+                <img src="IMG/instagram_2111463.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="IMG/whatsapp_2504957.png" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com/@kyoojurow" target="_blank">
+                <img src="IMG/social-media.png" alt="Tik Tod" class="social-icon">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 M.Rafa Alfareza. All rights reserved.</p>
+    </footer>
+</body>
+</html>

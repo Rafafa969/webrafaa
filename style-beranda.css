@@ -1,0 +1,160 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel Warna */
+:root {
+    --primary-color: #4A90E2; /* Warna utama */
+    --secondary-color: #FFFFFF; /* Warna sekunder */
+    --accent-color: #D0021B; /* Warna aksen */
+    --background-color: #f4f4f4; /* Warna latar belakang */
+    --text-color: #333333; /* Warna teks utama */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Warna bayangan */
+}
+
+/* Gaya untuk Body */
+body {
+    background-color: var(--background-color); /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Font untuk seluruh halaman */
+    color: var(--text-color); /* Warna teks utama */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Padding untuk header */
+    background: var(--primary-color); /* Warna latar belakang header */
+    color: var(--secondary-color); /* Warna teks di header */
+}
+
+header .logo {
+    font-size: 2rem; /* Ukuran font logo */
+}
+
+header nav ul {
+    display: flex; /* Flexbox untuk menu */
+    list-style: none; /* Menghilangkan bullet points */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Margin antara item menu */
+}
+
+header nav ul li a {
+    color: var(--secondary-color); /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
+
+/* Beranda */
+.beranda {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    justify-content: space-between; /* Menyusun konten ke kiri dan kanan */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 200px 90px; /* Padding untuk beranda */
+    margin: 0; /* Menghilangkan margin */
+    min-height: 500px; /* Tinggi minimum */
+    position: relative; /* Untuk penataan elemen pseudo */
+    overflow: hidden; /* Menghindari elemen keluar dari kontainer */
+}
+
+.background-video {
+    position: absolute; /* Memposisikan video secara absolut */
+    top: 0; /* Menempatkan video di bagian atas */
+    left: 0; /* Menempatkan video di bagian kiri */
+    width: 100%; /* Lebar video 100% dari kontainer */
+    height: 100%; /* Tinggi video 100% dari kontainer */
+    object-fit: cover; /* Menjaga rasio aspek dan menutupi area */
+    z-index: -1; /* Menempatkan video di belakang konten */
+}
+
+.beranda-content {
+    text-align: left; /* Memindahkan teks ke kiri */
+    color: #f4f4f4; /* Warna teks di beranda */
+    position: relative; /* Memastikan konten berada di atas video */
+    z-index: 1; /* Menempatkan konten di atas video */
+}
+
+.beranda h1 {
+    font-size: 3rem; /* Ukuran font yang lebih besar */
+}
+
+.beranda p {
+    font-size: 1.2rem; /* Ukuran font untuk deskripsi */
+    margin: 20px 0; /* Margin untuk jarak */
+}
+
+.btn {
+    display: inline-block; /* Menampilkan sebagai blok */
+    padding: 10px 20px; /* Padding untuk tombol */
+    background-color: var(--accent-color); /* Warna latar belakang tombol */
+    color: var(--secondary-color); /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut membulat */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi untuk skala dan warna latar belakang */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Memperbesar tombol sedikit saat dihover ```css
+    background-color: #C70000; /* Warna latar belakang tombol saat hover */
+}
+
+/* Gaya untuk Gambar Profil */
+/* Gaya untuk Gambar Profil */
+.profile-image {
+    position: relative; /* Memastikan posisi relatif untuk overlay */
+    display: inline-block; /* Menjaga ukuran kontainer sesuai dengan gambar */
+}
+
+.image-container {
+    position: relative; /* Memastikan posisi relatif untuk overlay */
+    overflow: hidden; /* Menghindari elemen keluar dari kontainer */
+}
+
+.profile-pic {
+    width: 300px; /* Lebar gambar profil */
+    height: 300px; /* Tinggi gambar profil */
+    border-radius: 50%; /* Membuat gambar profil bulat */
+    box-shadow: 0 4px 8px var(--shadow-color); /* Bayangan untuk gambar */
+    display: block; /* Menghindari spasi di bawah gambar */
+}
+
+.overlay {
+    position: absolute; /* Memposisikan overlay secara absolut */
+    top: 0; /* Menempatkan overlay di atas gambar */
+    left: 0; /* Menempatkan overlay di kiri */
+    right: 0; /* Menempatkan overlay di kanan */
+    bottom: 0; /* Menempatkan overlay di bawah */
+    background-color: rgba(0, 0, 0, 0.5); /* Warna overlay dengan transparansi */
+    color: var(--secondary-color); /* Warna teks overlay */
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    justify-content: center; /* Menyelaraskan teks di tengah */
+    align-items: center; /* Menyelaraskan teks secara vertikal */
+    opacity: 1; /* Mengatur opacity awal menjadi 0 */
+    transition: opacity s; /* Transisi untuk efek hover */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Menampilkan overlay saat hover */
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color); /* Warna latar belakang footer */
+    color: var(--secondary-color); /* Warna teks di footer */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    padding: 20px; /* Padding untuk footer */
+}
+
+.footer-bottom p {
+    margin: 0; 
+}

@@ -1,0 +1,129 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel Warna */
+:root {
+    --primary-color: #4A90E2; /* Warna utama */
+    --secondary-color: #FFFFFF; /* Warna sekunder */
+    --accent-color: #D0021B; /* Warna aksen */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Warna bayangan */
+}
+
+/* Gaya untuk Body */
+body {
+    background-color: #f4f4f4; /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Font untuk seluruh halaman */
+}
+
+/* Header */
+header {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Ruang antara logo dan menu */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 20px; /* Padding untuk header */
+    background: var(--primary-color); /* Warna latar belakang header */
+    color: var(--secondary-color); /* Warna teks di header */
+}
+
+/* Section Kontak */
+#kontak {
+    padding: 50px; /* Padding untuk section */
+    margin: 20px auto; /* Margin untuk section */
+    background: var(--secondary-color); /* Latar belakang section */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 20px var(--shadow-color); /* Bayangan untuk section */
+    max-width: 800px; /* Lebar maksimum section */
+    text-align: center; /* Rata tengah untuk teks */
+}
+
+#kontak h2 {
+    color: var(--primary-color); /* Warna judul */
+    margin-bottom: 20px; /* Margin bawah untuk judul */
+}
+
+#kontak p {
+    font-size: 1rem; /* Ukuran font untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris */
+    color: #333; /* Warna teks paragraf */
+    margin-bottom: 15px; /* Margin bawah untuk paragraf */
+}
+
+/* Gaya untuk Ikon Sosial Media */
+.social-media {
+    margin-top: 20px; /* Jarak atas untuk sosial media */
+}
+
+.social-icon {
+    width: 40px; /* Atur lebar ikon */
+    height: 40px; /* Atur tinggi ikon */
+    margin: 0 10px; /* Jarak antar ikon */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Memperbesar ikon saat hover */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Rata tengah untuk footer */
+    padding: 20px; /* Padding untuk footer */
+    background: var(--primary-color); /* Warna latar belakang footer */
+    color: var(--secondary-color); /* Warna teks di footer */
+    position: relative; /* Posisi relatif untuk footer */
+    bottom: 0; /* Menempatkan footer di bawah */
+    width: 100%; /* Lebar footer 100% */
+    margin-top: 5%;
+}
+
+/* Gaya untuk Formulir */
+form {
+    background: var(--secondary-color); /* Latar belakang formulir */
+    padding: 20px; /* Padding untuk formulir */
+    border-radius: 8px; /* Sudut membulat untuk formulir */
+    box-shadow: 0 4px 20px var(--shadow-color); /* Bayangan untuk formulir */
+    margin: 20px auto; /* Margin untuk formulir */
+    max-width: 500px; /* Lebar maksimum formulir */
+}
+
+/* Gaya untuk Input dan Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Lebar penuh */
+    padding: 10px; /* Padding untuk input */
+    margin-bottom: 15px; /* Margin bawah untuk jarak antar elemen */
+    border: 1px solid #ccc; /* Border untuk input */
+    border-radius: 5px; /* Sudut membulat untuk input */
+    font-size: 1rem; /* Ukuran font untuk input */
+    transition: border-color 0.3s; /* Transisi untuk border */
+}
+
+/* Efek saat fokus pada input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--primary-color); /* Ubah warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+/* Gaya untuk Tombol Kirim */
+button[type="submit"] {
+    background-color: var(--accent-color); /* Warna latar belakang tombol */
+    color: var(--secondary-color); /* Warna teks tombol */
+    padding: 10px 20px; /* Padding untuk tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut membulat untuk tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi untuk efek hover */
+}
+
+/* Efek saat hover pada tombol */
+button[type="submit"]:hover {
+    background-color: #A50000; /* Ubah warna latar belakang saat hover */
+    transform: scale(1.05); /* Memperbesar tombol sedikit saat dihover */
+}

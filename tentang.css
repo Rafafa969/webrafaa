@@ -1,0 +1,90 @@
+/* Reset CSS */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel Warna */
+:root {
+    --primary-color: #4A90E2; /* Warna utama */
+    --secondary-color: #FFFFFF; /* Warna sekunder */
+    --accent-color: #D0021B; /* Warna aksen */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Warna bayangan */
+}
+
+/* Gaya untuk Body */
+body {
+    background-color: #f4f4f4; /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Font untuk seluruh halaman */
+}
+
+/* Header */
+header {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Ruang antara logo dan menu */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 20px; /* Padding untuk header */
+    background: var(--primary-color); /* Warna latar belakang header */
+    color: var(--secondary-color); /* Warna teks di header */
+}
+
+header .logo {
+    font-size: 2rem; /* Ukuran font logo */
+}
+
+header nav ul {
+    display: flex; /* Flexbox untuk menu */
+    list-style: none; /* Menghilangkan bullet points */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Margin antara item menu */
+}
+
+header nav ul li a {
+    color: var(--secondary-color); /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
+
+/* Section Tentang Saya */
+#tentang {
+    padding: 50px; /* Padding untuk section */
+    margin: 20px auto; /* Margin untuk section */
+    background: var(--secondary-color); /* Latar belakang section */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 20 px var(--shadow-color); /* Bayangan untuk section */
+}
+
+.tentang-item {
+    margin-bottom: 30px; /* Margin bawah untuk setiap item */
+}
+
+.tentang-item h2 {
+    font-size: 1.5rem; /* Ukuran font untuk header item */
+    color: var(--primary-color); /* Warna header item */
+    margin-bottom: 10px; /* Margin bawah untuk header item */
+}
+
+.tentang-item p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+    color: #333; 
+}
+
+/* Footer */
+footer {
+    text-align: center; 
+    padding: 20px;
+    background: var(--primary-color); 
+    color: var(--secondary-color); 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    margin-top: 15%;
+}

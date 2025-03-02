@@ -1,0 +1,92 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel Warna */
+:root {
+    --primary-color: #4A90E2; /* Warna utama */
+    --secondary-color: #FFFFFF; /* Warna sekunder */
+    --accent-color: #D0021B; /* Warna aksen */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Warna bayangan */
+}
+
+/* Gaya untuk Body */
+body {
+    background-color: #f4f4f4; /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Font untuk seluruh halaman */
+}
+
+/* Header */
+header {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Ruang antara logo dan menu */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 20px; /* Padding untuk header */
+    background: var(--primary-color); /* Warna latar belakang header */
+    color: var(--secondary-color); /* Warna teks di header */
+}
+
+header .logo {
+    font-size: 2rem; /* Ukuran font logo */
+}
+
+header nav ul {
+    display: flex; /* Flexbox untuk menu */
+    list-style: none; /* Menghilangkan bullet points */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Margin antara item menu */
+}
+
+header nav ul li a {
+    color: var(--secondary-color); /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
+
+/* Section CV */
+#cv {
+    padding: 50px; /* Padding untuk section */
+    margin: 20px auto; /* Margin untuk section */
+    background: var(--secondary-color); /* Latar belakang section */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 20px var(--shadow-color); /* Bayangan untuk section */
+    max-width: 800px; /* Lebar maksimum section */
+    text-align: center; /* Rata tengah untuk teks */
+}
+
+#cv h2 {
+    color: var(--primary-color); /* Warna judul */
+    margin-bottom: 20px; /* Margin bawah untuk judul */
+}
+
+#cv img {
+    width: 100%; /* Lebar penuh */
+    height: auto; /* Menjaga rasio aspek gambar */
+    margin-bottom: 20px; /* Margin bawah untuk gambar */
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color); /* Latar belakang footer */
+    color: var(--secondary-color); /* Warna teks di footer */
+    text-align: center; /* Rata tengah untuk teks */
+    padding: 20px; /* Padding untuk footer */
+    position: relative; /* Posisi relatif untuk footer */
+    bottom: 0; /* Menempatkan footer di bawah */
+    width: 100%; /* Lebar footer 100% */
+    margin-top: 5%; /* Margin atas untuk footer */
+}
+
+.footer-content {
+    max-width: 1200px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Menyelaraskan konten ke tengah */
+}

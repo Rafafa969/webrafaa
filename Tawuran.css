@@ -1,0 +1,151 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel Warna */
+:root {
+    --primary-color: #4A90E2; /* Warna utama */
+    --secondary-color: #FFFFFF; /* Warna sekunder */
+    --accent-color: #D0021B; /* Warna aksen */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Warna bayangan */
+}
+
+/* Gaya untuk Body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Ruang antara logo dan menu */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 20px; /* Padding untuk header */
+    background: var(--primary-color); /* Warna latar belakang header */
+    color: var(--secondary-color); /* Warna teks di header */
+}
+
+header .logo {
+    font-size: 2rem; /* Ukuran font logo */
+}
+
+header nav ul {
+    display: flex; /* Flexbox untuk menu */
+    list-style: none; /* Menghilangkan bullet points */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Margin antara item menu */
+}
+
+header nav ul li a {
+    color: var(--secondary-color); /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
+
+/* Section Larangan Tawuran */
+#larangan-tawuran {
+    padding: 50px; /* Padding untuk section */
+    margin: 20px auto; /* Margin untuk section */
+    background: var(--secondary-color); /* Latar belakang section */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 20px var(--shadow-color); /* Bayangan untuk section */
+    max-width: 800px; /* Lebar maksimum section */
+    flex: 1;
+}
+
+#larangan-tawuran h2 {
+    margin-bottom: 20px; /* Margin bawah untuk judul */
+    color: var(--primary-color); /* Warna judul */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.tawuran-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tawuran-content img {
+    width: 100%; /* Lebar penuh untuk gambar */
+    max-width: 600px; /* Lebar maksimum untuk gambar */
+    height: auto; /* Tinggi otomatis */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 10px var(--shadow-color); /* Bayangan untuk gambar */
+    margin-bottom: 20px; /* Margin bawah untuk gambar */
+}
+
+.tawuran-text {
+    text-align: justify;
+}
+
+#larangan-tawuran p {
+    margin-bottom: 20px; /* Margin bawah untuk paragraf */
+    color: #333; /* Warna teks paragraf */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+#larangan-tawuran h3 {
+    margin-top: 30px; /* Margin atas untuk subjudul */
+    color: var(--primary-color); /* Warna subjudul */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+#larangan-tawuran ul {
+    list-style: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+#larangan-tawuran ul li {
+    margin-bottom: 10px; /* Margin bawah untuk item daftar */
+}
+
+#larangan-tawuran ul li a {
+    color: var(--primary-color); /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+#larangan-tawuran ul li a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color); /* Latar belakang footer */
+    color: var(--secondary-color); /* Warna teks di footer */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    padding: 20px 0; /* Padding untuk footer */
+    margin-top: auto; /* Membuat footer tetap di bawah */
+}
+
+.footer-content {
+    max-width: 1200px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Menyelaraskan konten ke tengah */
+}
+
+.contact-info, .social-media {
+    margin: 10px 0; /* Margin untuk jarak antar elemen */
+}
+
+.social-media a {
+    color: var(--secondary-color); /* Warna tautan di footer */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.social-media a:hover {
+    color: var(--accent-color); /* Warna tautan saat hover */
+}
